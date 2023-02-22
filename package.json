@@ -1,5 +1,5 @@
 {
-  "name": "launch-editor-middleware",
+  "name": "launch-editor",
   "version": "2.6.0",
   "description": "express middleware for launching editor",
   "main": "src/index.js",
