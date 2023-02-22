@@ -1,0 +1,51 @@
+{
+  "name": "launch-editor-middleware",
+  "version": "2.6.0",
+  "description": "express middleware for launching editor",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maryasov-sd/launch-editor.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "launch",
+    "editor"
+  ],
+  "scripts": {
+    "lint": "eslint packages --fix"
+  },
+  "author": "Evan You",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maryasov-sd/launch-editor/issues"
+  },
+  "homepage": "https://github.com/maryasov-sd/launch-editor#readme",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-plugin-vue-libs": "^2.1.0",
+    "lerna": "^2.5.1",
+    "lint-staged": "^6.0.0",
+    "yorkie": "^1.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:vue-libs/recommended"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "launch-editor": "^2.6.0",
+    "picocolors": "^1.0.0",
+    "shell-quote": "^1.7.3"
+  }
+}
